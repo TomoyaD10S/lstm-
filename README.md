@@ -7,7 +7,11 @@ example.pyを参考にして時系列データを入力データとしてpreproc
 入力データは目的変数を人口流動数、説明変数を曜日としています。データはtrain、val、testに分けられます。
 
 
-train
+
+
+
+
+train(preprocess_train.py)
 
 ある日の人口流動数と7日前までの人口流動数の関係を学習しています。
 
@@ -15,6 +19,7 @@ train
 
 
 
-test
+
+test(test.py)
 
 学習時と同じ入力データを用いてください。
