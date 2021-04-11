@@ -12,7 +12,7 @@ from keras import metrics
 
 
  # データの読み込み
-df = pd.read_csv('preprocess/saitama.csv')
+df = pd.read_csv('preprocess/example.csv')
 
 name = 'predict'
 

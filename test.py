@@ -12,9 +12,9 @@ from datetime import date, timedelta
 
 
  # データの読み込み
-df = pd.read_csv('preprocess/akita.csv')
+df = pd.read_csv('preprocess/example.csv')
 
-name = 'predict'
+name = 'aichi'
 
 
 df['Date'] = pd.to_datetime(df['Date'], format="%Y/%m/%d")
@@ -72,8 +72,8 @@ y_train_t = get_standardized_y_t(y=y_train, num_date=num_date)
 y_val_t = get_standardized_y_t(y=y_val, num_date=num_date)
 y_test_t = get_standardized_y_t(y=y_test, num_date=num_date)
 
-model = load_model('./model/akita_model.h5')
-model.load_weights('./weights/akita_weights.h5')
+model = load_model('./model/aichi_model.h5')
+model.load_weights('./weights/aichi_weights.h5')
 
 model.summary()
 
